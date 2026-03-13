@@ -1,7 +1,7 @@
 # Title
 
-tags: [#YYYY/MM/DD, ...]
-links: []
+tags: #YYYY/MM/DD, ...
+links: 
 
 ## Summary
 
