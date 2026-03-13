@@ -14,7 +14,19 @@ Guidance for AI agents (and humans) working **within this area only**. This file
 
 ## Procedures
 
-- [Steps for common tasks in this area, e.g. "When adding a new note: 1. Create in this folder with kebab-case name. 2. Add a link from the area README or index if needed. 3. Link to related zettelkasten notes."]
+Each procedure has a **name**, then **When** and **What to do** as section headers. **What to do** is an enumerated list (1. 2. 3. …). Add or adapt procedures that apply in this area.
+
+### [Procedure name]
+
+#### When
+
+[When to use this procedure, e.g. when adding a new note or artifact that supports this area's ongoing responsibility.]
+
+#### What to do
+
+1. [Step one, e.g. Create the file in this folder with a kebab-case name.]
+2. [Step two, e.g. Add a link from the area README or index if the repo expects it.]
+3. [Step three, e.g. Link to related zettelkasten notes or projects where relevant.]
 
 ## How to operate
 

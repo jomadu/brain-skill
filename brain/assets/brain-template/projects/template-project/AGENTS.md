@@ -14,7 +14,19 @@ Guidance for AI agents (and humans) working **within this project only**. This f
 
 ## Procedures
 
-- [Steps for common tasks in this project, e.g. "When adding a deliverable: 1. Create a note or subfolder here. 2. Link from the project README. 3. Reference related zettelkasten notes and areas where relevant."]
+Each procedure has a **name**, then **When** and **What to do** as section headers. **What to do** is an enumerated list (1. 2. 3. …). Add or adapt procedures that apply in this project.
+
+### [Procedure name]
+
+#### When
+
+[When to use this procedure, e.g. when adding a deliverable or artifact to this project.]
+
+#### What to do
+
+1. [Step one, e.g. Create a note or subfolder here with a kebab-case name.]
+2. [Step two, e.g. Link from the project README or index if the repo expects it.]
+3. [Step three, e.g. Reference related zettelkasten notes and areas where relevant; link, don’t duplicate.]
 
 ## How to operate
 
