@@ -23,6 +23,16 @@ Guidance for agents working in a brain-style repo: load the overlay, follow the 
 
 Do not put agent-only procedures in README; do not put human-only overview in AGENTS.md. When creating or editing either file, keep that split.
 
+### Conventions and procedures (first-class in AGENTS.md)
+
+**Conventions** are the rules: naming, structure, what belongs where, and how things connect. **Procedures** are first-class alongside conventions. Each procedure must have:
+
+1. **Name** — A short, clear title (e.g. "Create a new area", "Process the inbox") so agents and humans can refer to it.
+2. **When** — A section header (e.g. `#### When`) followed by the situation or trigger that calls for this procedure.
+3. **What to do** — A section header (e.g. `#### What to do`) followed by an **enumerated list** of steps (1. 2. 3. …), not bullets or a single line. So agents can follow them in order.
+
+Document procedures in every AGENTS.md where they apply (root, areas, projects, resources, zettelkasten, etc.). Prefer following documented procedures over inventing new ones.
+
 ## Overlay: parent through root
 
 When working at any path in the repo, **all AGENTS.md files from the repository root down to that path** apply. They **overlay**: root is the base; each level toward the current path adds or refines.
@@ -36,17 +46,17 @@ When working at any path in the repo, **all AGENTS.md files from the repository 
 **Example:** Working in `areas/learning/`:
 
 1. Read and apply root `AGENTS.md`.
-1. If `areas/AGENTS.md` exists, read and apply it.
-1. Read and apply `areas/learning/AGENTS.md`.
+2. If `areas/AGENTS.md` exists, read and apply it.
+3. Read and apply `areas/learning/AGENTS.md`.
 
 Together they form the full set of rules for that path.
 
 ## What to do in practice
 
 1. **Determine scope** — Identify the path you’re working in (e.g. an area, a project, `resources/`, `zettelkasten/`).
-1. **Load the overlay** — For that path, open every `AGENTS.md` from repo root down to that path (each directory segment). Combine them with later (more specific) layers taking precedence where they conflict.
-1. **Act** — Follow the combined guidance. Prefer procedures stated in those files over inventing new ones.
-1. **When adding or changing structure** — Create or update README.md for humans and AGENTS.md for agents at the right scope. In AGENTS.md, include scope, conventions, procedures, and how to operate at that level (repo-wide in root, path-specific in that path’s AGENTS.md).
+2. **Load the overlay** — For that path, open every `AGENTS.md` from repo root down to that path (each directory segment). Combine them with later (more specific) layers taking precedence where they conflict.
+3. **Act** — Follow the combined guidance. Prefer procedures stated in those files over inventing new ones.
+4. **When adding or changing structure** — Create or update README.md for humans and AGENTS.md for agents at the right scope. In AGENTS.md, include scope, conventions, procedures (each with a **name**, **When** and **What to do** as section headers, and **What to do** as an enumerated list), and how to operate at that level (repo-wide in root, path-specific in that path’s AGENTS.md).
 
 ## Where the contract applies
 
@@ -63,21 +73,22 @@ The exact layout (e.g. per-project AGENTS.md) is defined by the repo’s root an
 When the user asks for a **review**, **audit**, or **conformance check** of the repository against this contract:
 
 1. **Scan the repo** for all README.md and AGENTS.md files (root and under areas, projects, resources, zettelkasten, and any other scopes the root AGENTS.md defines).
-1. **Audit against the contract:**
+2. **Audit against the contract:**
    - **Presence:** Where does the root (or existing AGENTS.md) say README/AGENTS are expected? Are they present? Missing?
    - **Split:** In each pair, does README hold human-facing content (what this is, how to use it, how it connects) and AGENTS.md hold agent-facing content (scope, conventions, procedures, how to operate)? Flag content that belongs in the other file.
+   - **Procedures:** Where AGENTS.md defines procedures, does each have a **name**, **When** and **What to do** as section headers, and **What to do** as an enumerated list (1. 2. 3. …)? Flag procedures that are missing any of these or use bullets/a single line for steps instead of an enumerated list.
    - **Overlay:** Do AGENTS.md files reference or assume the parent-through-root overlay? Are paths/links to parent or root AGENTS.md correct?
    - **Scope:** Is repo-wide guidance only in root? Is scope-specific guidance only in the relevant scope (not duplicated in root)?
-1. **Report findings** — List what conforms and what does not, with paths and short reasons.
-1. **Suggest revisions** — For each issue, propose a concrete change: add a missing file, move or rephrase content to the correct file, fix a link, or split content between README and AGENTS.md. Offer to apply the suggested revisions (edits) when the user approves.
+3. **Report findings** — List what conforms and what does not, with paths and short reasons.
+4. **Suggest revisions** — For each issue, propose a concrete change: add a missing file, move or rephrase content to the correct file, fix a link, or split content between README and AGENTS.md. Offer to apply the suggested revisions (edits) when the user approves.
 
 ## Initializing from template
 
 When the user wants to **initialize an uninitialized directory or repository** as a brain (or "pull the template"):
 
 1. **Locate the template** — The skill provides a full brain template at **assets/brain-template/** (relative to this skill's root). Path from workspace root is typically `.cursor/skills/brain/assets/brain-template/`.
-1. **Target directory** — Copy into the repository root (or the directory the user specifies). If the target already has brain files (e.g. root AGENTS.md, areas/), treat it as already initialized unless the user asks to overwrite or refresh.
-1. **Copy template contents** — Copy all files and directories from `assets/brain-template/` into the target, preserving structure. Do not copy the `brain-template` folder itself; copy its contents so that AGENTS.md, README.md, areas/, projects/, resources/, scripts/, zettelkasten/, and .gitignore end up at the target root.
-1. **Follow-up** — After copying, point the user to the new root README.md (quick start: customize areas, projects, and zettelkasten).
+2. **Target directory** — Copy into the repository root (or the directory the user specifies). If the target already has brain files (e.g. root AGENTS.md, areas/), treat it as already initialized unless the user asks to overwrite or refresh.
+3. **Copy template contents** — Copy all files and directories from `assets/brain-template/` into the target, preserving structure. Do not copy the `brain-template` folder itself; copy its contents so that AGENTS.md, README.md, areas/, projects/, resources/, scripts/, zettelkasten/, and .gitignore end up at the target root.
+4. **Follow-up** — After copying, point the user to the new root README.md (quick start: customize areas, projects, and zettelkasten).
 
 Template contents are listed in [assets/README.md](assets/README.md).
