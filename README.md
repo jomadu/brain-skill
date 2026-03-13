@@ -2,6 +2,28 @@
 
 An **[Agent Skill](https://agentskills.io/home)** (following the [Agent Skills spec](https://agentskills.io/home)) plus a **template** for “brain-style” repositories: a personal knowledge base with **areas** (ongoing responsibilities), **projects** (time-bound work), **resources** (reference), and a **Zettelkasten** (atomic, linked notes).
 
+## Structure and components
+
+A brain-style repo splits guidance by audience and layers it by path.
+
+**README vs AGENTS.md** — Every scope (root, areas, projects, etc.) can have a **README.md** for humans (what this is, how to use it, how it connects) and an **AGENTS.md** for agents (scope, conventions, procedures, how to operate). Content stays split: human-facing in README, agent-facing in AGENTS.md.
+
+**Overlay** — When working at a path, agents apply **all** AGENTS.md files from the repo root down to that path. Root is the base; each level adds or refines. More specific (closer to the path) overrides the more general.
+
+**Procedures** — In AGENTS.md, procedures are first-class: each has a **name**, a **When** (when to use it), and **What to do** (an enumerated list of steps). Agents follow these instead of inventing ad-hoc workflows. Procedures are defined at the right scope (e.g. "Create a permanent note" in zettelkasten/AGENTS.md, "Add or change a top-level scope" in root AGENTS.md).
+
+**Top-level scopes** (what the template creates):
+
+| Scope | Purpose |
+|-------|--------|
+| **areas/** | Ongoing responsibilities with no fixed "done" date. One folder per area (e.g. work, learning, health). Each area has its own README and AGENTS.md. |
+| **projects/** | Time-bound or outcome-bound work. One folder per project; completed work moves to `archive/<name>/`. Link to areas, resources, and zettelkasten. |
+| **resources/** | Reference material: docs, bookmarks, templates. Things you refer to but don't necessarily atomize into notes. |
+| **zettelkasten/** | Slip-box for atomic, linked notes. **inbox/** for quick captures; permanent notes in the folder root with **date+slug** filenames (`YYYY-MM-DD-slug.md`). Organize by linking, not folders. Includes a note template and method doc. |
+| **scripts/** | Small scripts and automation; documented for both humans and agents. |
+
+The skill teaches agents this structure, the overlay, and the procedures; the template provides the folders, READMEs, AGENTS.md files, and templates (e.g. template-area, template-project, template-zettel) so you can copy and adapt.
+
 ## What you get
 
 - **Skill** (`brain/SKILL.md`) — Tells skills-compatible agents how to work in brain-style repos: README for humans, AGENTS.md for agents, and an overlay of AGENTS.md from root down to the current path. Use it when managing structure, creating/linking zettels, or initializing from the template.
