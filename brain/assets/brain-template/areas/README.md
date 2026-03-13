@@ -12,4 +12,4 @@ Ongoing responsibilities (no fixed "done" date). Each area is its own folder—a
 - **README.md** — For humans: what this area is, how to work in it, and how it connects to the rest of the repo. Helps you and others navigate and use the area.
 - **AGENTS.md** — For AI agents (and humans): scope, conventions, and how to operate within this area. Ensures agents follow area-specific rules and don’t override repo-wide guidance in [AGENTS.md](../AGENTS.md).
 
-When creating a new area, copy the structure from [example-area/](example-area/) and adapt the content. Repo-wide conventions (e.g. kebab-case file names) still apply; see [AGENTS.md](../AGENTS.md).
+When creating a new area, copy the structure from [template-area/](template-area/) and adapt the content. Repo-wide conventions (e.g. kebab-case file names) still apply; see [AGENTS.md](../AGENTS.md).

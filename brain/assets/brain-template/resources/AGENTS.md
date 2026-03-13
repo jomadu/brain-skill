@@ -1,10 +1,10 @@
 # Resources: Agent guidance
 
-Guidance for agents working under **resources/**. Repo-wide rules apply: see [AGENTS.md](../AGENTS.md) for conventions, tooling, and layout.
+Guidance for agents working under **resources/**. Repo-wide rules apply: see [AGENTS.md](../AGENTS.md) for conventions and layout.
 
 ## Scope
 
-- **This scope covers:** Reference material, tooling docs, templates, bookmarks—things people refer to but don’t necessarily turn into zettelkasten notes. No fixed "done" date; resources are ongoing reference.
+- **This scope covers:** Reference material, templates, bookmarks—things people refer to but don’t necessarily turn into zettelkasten notes. No fixed "done" date; resources are ongoing reference.
 - **Out of scope:** Time-bound work belongs in [projects/](../projects/); ongoing responsibilities in [areas/](../areas/); atomic linked notes in [zettelkasten/](../zettelkasten/).
 
 ## Conventions
@@ -14,5 +14,5 @@ Guidance for agents working under **resources/**. Repo-wide rules apply: see [AG
 
 ## Do / don’t
 
-- **Do:** Add or update reference docs and tooling guidance here; keep procedures in sync with root and [scripts/](../scripts/) where relevant.
+- **Do:** Add or update reference docs here; keep procedures in sync with root and [scripts/](../scripts/) where relevant.
 - **Don’t:** Put project deliverables or area-specific workflows here unless they are reference docs; don’t put atomic concept notes here (use zettelkasten).

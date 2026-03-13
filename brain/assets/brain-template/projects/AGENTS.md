@@ -1,6 +1,6 @@
 # Projects: Agent guidance
 
-Guidance for agents working under **projects/** (folder-level). Repo-wide rules apply: see [AGENTS.md](../AGENTS.md) for conventions, tooling, and layout.
+Guidance for agents working under **projects/** (folder-level). Repo-wide rules apply: see [AGENTS.md](../AGENTS.md) for conventions and layout.
 
 ## Scope
 
@@ -9,7 +9,7 @@ Guidance for agents working under **projects/** (folder-level). Repo-wide rules 
 
 ## Conventions
 
-- One folder per project; name folders in kebab-case.
+- One folder per project; name folders in kebab-case. When creating a new project, copy from [template-project/](template-project/) and adapt README.md and AGENTS.md.
 - Active projects live here; completed work moves to `archive/<project-name>/` (sibling of `projects/` if the repo uses it, or as the repo defines).
 - Link to [areas/](../areas/), [resources/](../resources/), and [zettelkasten/](../zettelkasten/) where relevant. Do not duplicate reference or concept content here; link instead.
 

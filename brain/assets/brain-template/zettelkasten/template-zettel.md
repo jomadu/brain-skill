@@ -1,8 +1,7 @@
 # Title
 
-tags: []
+tags: [#YYYY/MM/DD, ...]
 links: []
-created: ""
 
 ## Summary
 

@@ -49,9 +49,11 @@ ______________________________________________________________________
 
 Each note should have:
 
-1. **Unique identifier** — So it can be referenced. In this repo: filenames (e.g. kebab-case slugs or date+slug). Do not rely on wiki-style `[[links]]`; use standard markdown `[text](path/to/note.md)`.
+1. **Unique identifier** — So it can be referenced. In this repo: filenames use **date+slug** (e.g. `2025-03-13-principle-of-atomicity.md`). Date is `YYYY-MM-DD`; slug is kebab-case. Do not rely on wiki-style `[[links]]`; use standard markdown `[text](path/to/note.md)`.
 1. **Body** — The idea in **your own words**. You may keep a short quote on top, but the main content should be your formulation; that improves understanding and recall and makes the Zettelkasten yours.
 1. **References** — At the bottom: sources (e.g. citekeys) or links to other Zettels that inspired the note. If it's your own thought, no reference is required.
+
+Use a **creation-date tag** with a hash in the form **#YYYY/MM/DD** (e.g. `#2025/03/13`). Systems that support hierarchical tags can then filter by year, year-month, or full date.
 
 Prefer **knowledge** over raw **information**: add context and relevance. When unsure if something is worth a note, lean toward writing it (within your time constraints); you cannot know in advance which notes will matter later.
 
@@ -111,7 +113,7 @@ If you don't use paper reading notes: **collect** (highlights, quick captures, o
 
 ### Identity and stable links
 
-Each Zettel needs a **stable, unique identifier** so other notes and outlines can refer to it. In a file-based system, the filename (or a slug in the note) can serve as the ID. Prefer identifiers that don't depend on a specific app (e.g. plain markdown links by path or by a stable ID in the note). Stable IDs make the archive a long-lived hypertext: you can move or rename files with a consistent scheme and still resolve links.
+Each Zettel needs a **stable, unique identifier** so other notes and outlines can refer to it. In this repo the filename is that ID: use **date+slug** (e.g. `2025-03-13-principle-of-atomicity.md`). Prefer identifiers that don't depend on a specific app (e.g. plain markdown links by path). Stable IDs make the archive a long-lived hypertext: you can move or rename files with a consistent scheme and still resolve links.
 
 ### Kinds of ties between notes
 

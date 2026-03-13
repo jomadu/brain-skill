@@ -1,16 +1,16 @@
 # Zettelkasten: Agent guidance
 
-Guidance for AI agents (and humans) working in **zettelkasten/**. Repo-wide rules apply: see [AGENTS.md](../AGENTS.md) (repo root) for conventions, tooling, and layout.
+Guidance for AI agents (and humans) working in **zettelkasten/**. Repo-wide rules apply: see [AGENTS.md](../AGENTS.md) (repo root) for conventions and layout.
 
-**Full method (humans and agents):** The Zettelkasten method—principles, anatomy, linking, structure, writing—is in **[Zettelkasten.md](Zettelkasten.md)**. Read that for the complete guidance. This file adds repo-specific conventions and a quick reference for agents.
+**Full method (humans and agents):** The Zettelkasten method—principles, anatomy, linking, structure, writing—is in **[zettelkasten.md](zettelkasten.md)**. Read that for the complete guidance. This file adds repo-specific conventions and a quick reference for agents.
 
 ______________________________________________________________________
 
-## Repo Conventions (Quick Reference)
+## Zettlekasten Conventions (Quick Reference)
 
-- **File names**: kebab-case (e.g. `principle-of-atomicity.md`). See [AGENTS.md](../AGENTS.md) (repo root) for repo-wide conventions.
+- **File names**: date+slug in kebab-case (e.g. `2025-03-13-principle-of-atomicity.md`). Use `YYYY-MM-DD` then a slug. See [AGENTS.md](../AGENTS.md) (repo root) for repo-wide conventions.
 - **Links**: Standard markdown `[text](path/to/note.md)`. Do not use wiki-style `[[links]]`.
-- **Permanent notes**: In `zettelkasten/`. Use [\_template.md](_template.md) when creating new notes (title, tags, created, Summary, Notes, Links).
+- **Permanent notes**: In `zettelkasten/`. When creating a new note, **name the file** date+slug (e.g. `2025-03-13-title-slug.md`); use [template-zettel.md](template-zettel.md) for the **content** (title, tags, Summary, Notes, Links). Include a creation-date tag with a hash: **#YYYY/MM/DD** (e.g. `#2025/03/13`) so systems with hierarchical tags can filter by year, year-month, or full date.
 - **Inbox**: Use `inbox/` for fleeting captures; process into `zettelkasten/` and clear the inbox regularly.
 
 ______________________________________________________________________

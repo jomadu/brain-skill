@@ -28,9 +28,6 @@ wheels/
 venv/
 ENV/
 
-# Linting / tooling
-.ruff_cache/
-
 # IDE / editor
 .idea/
 *.swp
