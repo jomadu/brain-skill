@@ -1,0 +1,27 @@
+[project]
+name = "brain-template"
+version = "0.1.0"
+description = "Personal knowledge base template: areas, projects, resources, zettelkasten"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pre-commit>=3.6.0",
+    "mdformat>=0.7.17",
+    "mdformat-pyproject>=0.1.0",
+    "ruff>=0.8.0",
+]
+
+[tool.mdformat]
+wrap = "keep"
+number = false
+end_of_line = "lf"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W"]
