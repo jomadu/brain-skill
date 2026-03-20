@@ -12,6 +12,7 @@ ______________________________________________________________________
 - **Links**: Standard markdown `[text](path/to/note.md)`. Do not use wiki-style `[[links]]`.
 - **Permanent notes**: In `zettelkasten/`. When creating a new note, **name the file** date+slug (e.g. `2025-03-13-title-slug.md`); use [template-zettel.md](template-zettel.md) for the **content** (title, tags, Summary, Notes, Links). Include a creation-date tag with a hash: **#YYYY/MM/DD** (e.g. `#2025/03/13`) so systems with hierarchical tags can filter by year, year-month, or full date.
 - **Inbox**: Use `inbox/` for fleeting captures; process into `zettelkasten/` and clear the inbox regularly.
+- **Source lines (provenance)**: When a note records where content came from, put it in italics as `*Source: …*` and **always include a markdown link** to the capturing artifact (daily entry, meeting note, etc.). Multiple sources → multiple links in one line. Avoid prose-only dates with no link.
 
 ______________________________________________________________________
 
@@ -42,7 +43,7 @@ Processing the inbox (turning fleeting captures into permanent notes or discardi
 #### What to do
 
 1. Open items in `inbox/`.
-2. For each item: either create a new permanent note following **Create a permanent note** above (and add links with context), merge into an existing note, or discard.
+2. For each item: either create a new permanent note following **Create a permanent note** above (and add links with context), merge into an existing note, or discard. When promoting to permanent, **preserve or add hyperlinked** `*Source:*` lines (link to daily entry, meeting note, or other origin).
 3. Remove or clear processed items from inbox so the inbox stays for quick captures only.
 
 ______________________________________________________________________
