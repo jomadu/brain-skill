@@ -33,6 +33,17 @@ Do not put agent-only procedures in README; do not put human-only overview in AG
 
 Document procedures in every AGENTS.md where they apply (root, areas, projects, resources, zettelkasten, etc.). Prefer following documented procedures over inventing new ones.
 
+### Source lines (provenance)
+
+When notes record **where** content was captured (daily entries, meeting notes, person/group back-links, inbox or permanent zettelkasten):
+
+1. Use a single italic line, typically `*Source: …*`.
+2. **Always hyperlink the originating file**—do not write only a human date or title. Examples: `*Source: [Mar 19, 2026](../../areas/me/daily-entries/2026-03-19.md).*`, `*Source: [SPM team meeting](../../areas/relationships/groups/security-posture-management/2026-03-20-spm-team-meeting.md) Mar 20, 2026.*`
+3. **Multiple origins** → multiple markdown links in the same line, comma-separated.
+4. **Avoid:** `*Source: me entries Mar 19, 2026.*` or `*Source: SPM team meeting Mar 20, 2026.*` with no link—readers cannot jump to the capture.
+
+Repo-specific procedures in `areas/me/AGENTS.md`, `areas/relationships/AGENTS.md`, and `zettelkasten/AGENTS.md` should reinforce this for inbox creation and promotion (when those scopes exist in the repo).
+
 ## Overlay: parent through root
 
 When working at any path in the repo, **all AGENTS.md files from the repository root down to that path** apply. They **overlay**: root is the base; each level toward the current path adds or refines.
@@ -79,6 +90,7 @@ When the user asks for a **review**, **audit**, or **conformance check** of the 
    - **Procedures:** Where AGENTS.md defines procedures, does each have a **name**, **When** and **What to do** as section headers, and **What to do** as an enumerated list (1. 2. 3. …)? Flag procedures that are missing any of these or use bullets/a single line for steps instead of an enumerated list.
    - **Overlay:** Do AGENTS.md files reference or assume the parent-through-root overlay? Are paths/links to parent or root AGENTS.md correct?
    - **Scope:** Is repo-wide guidance only in root? Is scope-specific guidance only in the relevant scope (not duplicated in root)?
+   - **Source lines:** In zettelkasten notes, inbox captures, and relationship back-links, do `*Source:*` lines **hyperlink** to the capturing daily entry, meeting note, or other artifact (see **Source lines (provenance)** above)? Flag prose-only provenance with no link.
 3. **Report findings** — List what conforms and what does not, with paths and short reasons.
 4. **Suggest revisions** — For each issue, propose a concrete change: add a missing file, move or rephrase content to the correct file, fix a link, or split content between README and AGENTS.md. Offer to apply the suggested revisions (edits) when the user approves.
 
